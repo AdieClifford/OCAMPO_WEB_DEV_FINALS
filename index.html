@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="clock" id="clock"></div>
+    <div class="date" id="date"></div>
+    <div class="timezone" id="timezone"></div>
+
+    <div class="container">
+        <div class="search-box">
+            <i class='bx bx-map'></i>
+            <input type="text" placeholder="enter your location">
+            <button>Search</button>
+        </div>
+
+        <div class="weather-box">
+            <div class="box">
+                <div class="info-weather">
+                    <div class="weather"></div>
+                    <img src="image/cloudy.png" alt="Weather icon">
+                    <p class="temperature">0<span>°C</span></p>
+                    <p class="description"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="weather-details">
+            <div class="humidity">
+                <i class='bx bx-water'></i>
+                <div class="text">
+                    <div class="info-Humidity">
+                        <span>0%</span>
+                    </div>
+                    <p>Humidity</p>
+                </div>
+            </div>
+
+            <div class="Wind">
+                <i class='bx bxl-tailwind-css'></i>
+                <div class="text">
+                    <div class="info-Wind">
+                        <span>0Km/hr</span>
+                    </div>
+                    <p>Wind Speed</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="time-container">
+        <div class="time-search-box">
+            <input type="text" placeholder="Enter Capital of a Country" />
+            <button>Search Timezones</button>
+        </div>
+        <div id="timezone-select-container" style="display: none;">
+            <select id="timezone-select"></select>
+            <button id="get-time-button">Get Time</button>
+        </div>
+        <div id="time-output"></div>
+        <div id="time-error" class="error"></div>
+    </div>
+    
+
+    <script src="main.js"></script>
+</body>
+</html>
